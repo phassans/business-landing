@@ -1,0 +1,135 @@
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.hero-area .container {
+	height: 100%;
+	padding-top: 2em;
+}
+
+@media(min-width: 768px) {
+	.hero-area .row {
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+}
+
+
+.hero-area .col-md-4.main {
+	height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@media(max-height: 700px) {
+	.hero-text h1 {
+		font-size: 8vh;
+	}
+
+	@media(max-width: 768px) {
+		.hero-text h1 {
+			font-size: 8vw;
+		}
+	}
+}
+
+.landing-phone-image {
+	height: 100%;
+	object-fit: scale-down;
+}
+
+@media(max-width: 1199px) {
+	.landing-phone-image {
+		content: url("../img/phone/main_screen.png");
+	}
+}
+
+@media(min-width: 1200px) {
+	.landing-phone-image {
+		content: url("../img/phone/main_screen_75.png");
+	}
+
+	.col-md-4.main {
+		padding: 0;
+	}
+}
+
+.hero-area.slider-4 {
+	height: 100vh;
+	min-height: 450px;
+}
+
+@media(min-width: 1200px) {
+	.hero-area.slider-4 {
+		max-height: 685px;
+	}
+}
+
+@media(max-width: 768px) {
+	.hero-area.slider-4 {
+		min-height: 130vw;
+	}
+}
+
+.hero-area.slider-4 .col-md-4{
+	text-align: center;
+}
+
+@media(max-width: 991px) {
+	.hero-area.slider-4 .col-md-4{
+		display: none;
+	}
+}
+
+.service-area {
+	/*padding-top: 100px;*/
+}
+
+.service-area .service-icon {
+	text-align: center;
+}
+
+.service-area.white-bg img {
+	max-height: 652.5px;
+}
+
+@media(max-width: 526px) {
+	.service-area.white-bg img {
+		max-height: 652.5px;
+	}
+}
+
+@media(max-width: 991px) {
+	.middle-content {
+		display: flex;
+		flex-direction: column;
+		flex-direction: column-reverse;
+	}
+}
+
+/*Padding for phone image content*/
+.service-content h2 {
+	/*margin-top: 25%;*/
+}
+
+/*Padding for bottom download area*/
+.download-area {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+/*Padding for footer*/
+.section.copyright-area {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.how-work-area {
+	height: 100vh;
+  display: flex;
+  align-items: center;
+}
