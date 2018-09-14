@@ -147,13 +147,14 @@ header {
   margin: 0 0 35px;
 	text-align:center;
 	font-weight:500;
-  padding-right: 10%;
+ 
 }
 .imgres
 {
-	height:125px;
-	width:125px;
-	padding-bottom:20px;
+	height:65px;
+	width:65px;
+	margin-bottom:10px;
+	
 }
 .slider-thumb {
 	position: absolute;
@@ -462,9 +463,9 @@ ul.a {
 
 }
 
-.download-area{
-  background-color: #eee;
-  padding: 70px;
+.download-area {
+	background-color: #E9E3E3;
+	padding: 70px;
 }
 
 .download-option-btn ul li a i{color:#fd763c;margin-right:5px;transition:.3s;}
