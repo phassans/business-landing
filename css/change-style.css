@@ -58,12 +58,12 @@ body {
 
 .hero-area.slider-4 {
 	height: 100vh;
-	min-height: 450px;
+	min-height: 420px;
 }
 
 @media(min-width: 1200px) {
 	.hero-area.slider-4 {
-		max-height: 685px;
+		max-height: 385px;
 	}
 }
 
