@@ -142,12 +142,12 @@ header {
   margin-bottom: 20px;
 }
 .slider p {
-  color: #fff;
-  font-size: 38px;
-  margin: 0 0 35px;
-	text-align:center;
-	font-weight:500;
- 
+	color: #fff;
+	font-size: 38px;
+	margin: 0 0 35px;
+	text-align: center;
+	font-weight: 500;
+	line-height: 1.1;
 }
 .imgres
 {
@@ -229,6 +229,7 @@ header {
 
 .slide-phone {
   display: block;
+  max-width:40%;
   max-width:40%;
   max-height:40%;
   width: auto;

@@ -81,6 +81,112 @@
 			margin-left: 15px;
 			margin-right: 15px;
 		}
+
+
+	</style>
+	<style>
+		.faq-nav {
+			flex-direction: column;
+			margin: 0 0 32px;
+			border-radius: 2px;
+			border: 1px solid #ddd;
+			box-shadow: 0 1px 5px rgba(85, 85, 85, 0.15);
+		}
+
+			.faq-nav .nav-link {
+				position: relative;
+				display: block;
+				margin: 0;
+				padding: 13px 16px;
+				background-color: #fff;
+				border: 0;
+				border-bottom: 1px solid #ddd;
+				border-radius: 0;
+				color: #616161;
+				transition: background-color .2s ease;
+			}
+
+				.faq-nav .nav-link:hover {
+					background-color: #f6f6f6;
+				}
+
+				.faq-nav .nav-link.active {
+					background-color: #f6f6f6;
+					font-weight: 700;
+					color: rgba(0, 0, 0, 0.87);
+				}
+
+				.faq-nav .nav-link:last-of-type {
+					border-bottom-left-radius: 2px;
+					border-bottom-right-radius: 2px;
+					border-bottom: 0;
+				}
+
+				.faq-nav .nav-link i.mdi {
+					margin-right: 5px;
+					font-size: 18px;
+					position: relative;
+				}
+
+		.tab-content {
+			box-shadow: 0 1px 5px rgba(85, 85, 85, 0.15);
+		}
+
+			.tab-content .card {
+				border-radius: 0;
+			}
+
+			.tab-content .card-header {
+				padding: 15px 16px;
+				border-radius: 0;
+				background-color: #f6f6f6;
+				border: 1px solid rgba(0,0,0,.125);
+			}
+
+				.tab-content .card-header h5 {
+					margin: 0;
+				}
+
+					.tab-content .card-header h5 button {
+						display: block;
+						width: 100%;
+						padding: 0;
+						border: 0;
+						font-weight: 700;
+						color: rgba(0, 0, 0, 0.87);
+						text-align: left;
+						outline: 0;
+					}
+					.tab-content .card-header h5 button:focus {
+						
+						outline: 0;
+					}
+
+						.tab-content .card-header h5 button:hover, .tab-content .card-header h5 button:focus, .tab-content .card-header h5 button:active, .tab-content .card-header h5 button:hover:active {
+							text-decoration: none;
+						}
+
+			.tab-content .card-body p {
+				color: #616161;
+			}
+
+				.tab-content .card-body p:last-of-type {
+					margin: 0;
+				}
+
+		.accordion > .card:not(:first-child) {
+			border-top: 0;
+		}
+
+		.card-body {
+			border: 1px solid rgba(0, 0, 0, 0.125);
+			padding:10px;
+		}
+		.card-header button i {
+			margin-right:5px;
+			font-size:20px;
+		}
+	.card-header button[aria-expanded="true"] i:before { content: '\f0d7'; }
 	</style>
 </head>
 
@@ -113,167 +219,234 @@
 			</div>
 		</nav>
 	</header>
-
+	
 	<div class="row" style="padding-bottom:30px">
 		<div class="col-lg-12">
 			<h1 style="color:black">
 				FAQ
 
 			</h1>
-		<hr />
+			<hr />
 		</div>
-		<div class="col-lg-12">
-			<br />
-			<h4>
-				What makes HungryHour different than other deal apps/sites?
+		<div class="container">
+			<div class="row">
 
-			</h4>
+				<div class="col-lg-12">
+					<div class="tab-content" id="faq-tab-content">
+						<div class="tab-pane show active" id="tab1" role="tabpanel" aria-labelledby="tab1">
+							<div class="accordion" id="accordion-tab-1">
+								<div class="card">
+									<div class="card-header" id="accordion-tab-1-heading-1">
+										<h5>
+											<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-1" aria-expanded="false" aria-controls="accordion-tab-1-content-1"> <i class="fa fa-caret-right" aria-hidden="true"></i> What makes HungryHour different than other deal apps/sites?</button>
+										</h5>
+									</div>
+									<div class="collapse" id="accordion-tab-1-content-1" aria-labelledby="accordion-tab-1-heading-1" data-parent="#accordion-tab-1">
+										<div class="card-body">
+											<p>Unlike other sites that focuses on the entire restaurant, HungryHour focuses solely on your specific food/drink deals. We focus on presenting your specific food/drinks in the most compelling way possible so that you get the best exposure, regardless of restaurant reputation. HungryHour also focuses on <b>real-time deals</b> for the instant experience customers love. In addition, HungryHour is one of the only apps that does not require coupon users to present coupons, taking away any friction. This means happier customers and more foot traffic for your business.</p>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="accordion-tab-1-heading-2">
+										<h5>
+											<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-2" aria-expanded="false" aria-controls="accordion-tab-1-content-2"> <i class="fa fa-caret-right" aria-hidden="true"></i> What is the process for signing up, and how long does it take to get set up?</button>
+										</h5>
+									</div>
+									<div class="collapse" id="accordion-tab-1-content-2" aria-labelledby="accordion-tab-1-heading-2" data-parent="#accordion-tab-1">
+										<div class="card-body">
+											<p>Signing up with HungryHour for Business requires you to create a business account with all necessary business information (business name, address, cuisine type). It’s very easy and takes less than 5 minutes. You can sign up here.</p>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="accordion-tab-1-he-ading-3">
+										<h5>
+											<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-3" aria-expanded="false" aria-controls="accordion-tab-1-content-3"> <i class="fa fa-caret-right" aria-hidden="true"></i>  What is the length commitment with HungryHour?</button>
+										</h5>
+									</div>
+									<div class="collapse" id="accordion-tab-1-content-3" aria-labelledby="accordion-tab-1-heading-3" data-parent="#accordion-tab-1">
+										<div class="card-body">
+											<p>There is no length commitment with HungryHour. WHen you post a listing, you can choose to post a one-off single listing or choose a month-by-month plan that is cancellable at any time. Learn more about our pricing <a href="plan_Ppricing.html" target="_blank" style="font-weight:bold;text-decoration:underline;color:black;">here</a>.</p>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="accordion-tab-1-heading-4">
+										<h5>
+											<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-4" aria-expanded="false" aria-controls="accordion-tab-1-content-4"><i class="fa fa-caret-right" aria-hidden="true"></i>  How much does it cost to list items?</button>
+										</h5>
+									</div>
+									<div class="collapse" id="accordion-tab-1-content-4" aria-labelledby="accordion-tab-1-heading-4" data-parent="#accordion-tab-1">
+										<div class="card-body">
+											<p>
+												Your first month of listings (up to a certain amount) is absolutely free! After this period, refer to our <a href="plan_Ppricing.html" target="_blank" style="font-weight:bold;text-decoration:underline;color:black;"> plans and pricing page</a> to continue with our services.
+											</p>
+										</div>
+									</div>
 
-			<p>
-				Unlike other sites that focuses on the entire restaurant, HungryHour focuses solely on your specific food/drink deals. We focus on presenting your specific food/drinks in the most compelling way possible so that you get the best exposure, regardless of restaurant reputation. HungryHour also focuses on <b>real-time deals</b> for the instant experience customers love. In addition, HungryHour is one of the only apps that does not require coupon users to present coupons, taking away any friction. This means happier customers and more foot traffic for your business.
-			</p>
-			<h4>
-				What is the process for signing up, and how long does it take to get set up?
+								</div>
+								<div class="card">
+									<div class="card-header" id="accordion-tab-1-heading-5">
+										<h5>
+											<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-5" aria-expanded="false" aria-controls="accordion-tab-1-content-5"><i class="fa fa-caret-right" aria-hidden="true"></i>  	What types of listings are acceptable to post on HungryHour?</button>
+										</h5>
+									</div>
+									<div class="collapse" id="accordion-tab-1-content-5" aria-labelledby="accordion-tab-1-heading-5" data-parent="#accordion-tab-1">
+										<div class="card-body">
+											<p>
+												You can post any food or drink deal, discount, happy hour, or combo specials. Remember, you want to give users a great first interaction with your business, so the more of a “steal” your deal is, the better.
+											</p>
+										</div>
+									</div>
 
+								</div>
+								<div class="card">
+									<div class="card-header" id="accordion-tab-1-heading-6">
+										<h5>
+											<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-6" aria-expanded="false" aria-controls="accordion-tab-1-content-6"><i class="fa fa-caret-right" aria-hidden="true"></i>  		Can I post recurring deals (ex: weekly $5 Monday pizza night, weekly Tuesday night happy hours)?</button>
+										</h5>
+									</div>
+									<div class="collapse" id="accordion-tab-1-content-6" aria-labelledby="accordion-tab-1-heading-6" data-parent="#accordion-tab-1">
+										<div class="card-body">
+											<p>
+												Yes, you have the option to make listings either one-time or recurring (consecutive days and/or weekly) depending on your need.
+											</p>
+										</div>
+									</div>
 
-			</h4>
+								</div>
+								<div class="card">
+									<div class="card-header" id="accordion-tab-1-heading-7">
+										<h5>
+											<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-7" aria-expanded="false" aria-controls="accordion-tab-1-content-7"><i class="fa fa-caret-right" aria-hidden="true"></i>  Can I add more than 1 listing at a time?</button>
+										</h5>
+									</div>
+									<div class="collapse" id="accordion-tab-1-content-7" aria-labelledby="accordion-tab-1-heading-7" data-parent="#accordion-tab-1">
+										<div class="card-body">
+											<p>
+												Yes, you can add multiple listings. Once you sign up, you can also easily manage all your listings from an easy to use dashboard in the admin portal.
+											</p>
+										</div>
+									</div>
 
-			<p>
-				Signing up with HungryHour for Business requires you to create a business account with all necessary business information (business name, address, cuisine type). It’s very easy and takes less than 5 minutes. You can sign up here.
+								</div>
+								<div class="card">
+									<div class="card-header" id="accordion-tab-1-heading-8">
+										<h5>
+											<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-8" aria-expanded="false" aria-controls="accordion-tab-1-content-8"><i class="fa fa-caret-right" aria-hidden="true"></i>  Can I make scheduled listings for a future date?</button>
+										</h5>
+									</div>
+									<div class="collapse" id="accordion-tab-1-content-8" aria-labelledby="accordion-tab-1-heading-8" data-parent="#accordion-tab-1">
+										<div class="card-body">
+											<p>
+												Yes, you can set listings ahead of time and input the desired start and end dates and times. In the app, users will see this in the “tomorrow”, “this week”, or “next week” tabs.
+											</p>
+										</div>
+									</div>
 
-			</p>
-			<h4>
-				What is the length commitment with HungryHour?
+								</div>
+								<div class="card">
+									<div class="card-header" id="accordion-tab-1-heading-9">
+										<h5>
+											<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-9" aria-expanded="false" aria-controls="accordion-tab-1-content-9"><i class="fa fa-caret-right" aria-hidden="true"></i>  How do I reach HungryHour with a question?</button>
+										</h5>
+									</div>
+									<div class="collapse" id="accordion-tab-1-content-9" aria-labelledby="accordion-tab-1-heading-9" data-parent="#accordion-tab-1">
+										<div class="card-body">
+											<p>
+												For all questions about partnering with HungryHour, please email us at <a href="mailto:itshungryhour@gmail.com" target="_blank" style="font-weight:bold;text-decoration:underline;color:black;">itshungryhour@gmail.com</a>. We will respond to you as soon a possible.
 
-			</h4>
+											</p>
+										</div>
+									</div>
 
-			<p>
-				There is no length commitment with HungryHour. WHen you post a listing, you can choose to post a one-off single listing or choose a month-by-month plan that is cancellable at any time. Learn more about our pricing <a href="plan_Ppricing.html" target="_blank" style="font-weight:bold;text-decoration:underline;color:black;">here</a>.
-
-			</p>
-			<h4>
-				How much does it cost to list items?
-
-
-			</h4>
-
-			<p>
-				Your first month of listings (up to a certain amount) is absolutely free! After this period, refer to our <a href="plan_Ppricing.html" target="_blank" style="font-weight:bold;text-decoration:underline;color:black;">plans and pricing page</a> to continue with our services.
-
-			</p>
-			<h4>
-				What types of listings are acceptable to post on HungryHour?
-
-			</h4>
-
-			<p>
-				You can post any food or drink deal, discount, happy hour, or combo specials. Remember, you want to give users a great first interaction with your business, so the more of a “steal” your deal is, the better.
-
-			</p>
-			<h4>
-				Can I post recurring deals (ex: weekly $5 Monday pizza night, weekly Tuesday night happy hours)?
-
-			</h4>
-
-			<p>
-				Yes, you have the option to make listings either one-time or recurring (consecutive days and/or weekly) depending on your need.
-
-			</p>
-			<h4>
-				Can I add more than 1 listing at a time?
-
-			</h4>
-
-			<p>
-				Yes, you can add multiple listings. Once you sign up, you can also easily manage all your listings from an easy to use dashboard in the admin portal.
-
-			</p>
-			<h4>
-				Can I make scheduled listings for a future date?
-
-			</h4>
-
-			<p>
-				Yes, you can set listings ahead of time and input the desired start and end dates and times. In the app, users will see this in the “tomorrow”, “this week”, or “next week” tabs.
-
-			</p>
-			<h4>
-				How do I reach HungryHour with a question?
-
-			</h4>
-
-			<p>
-				For all questions about partnering with HungryHour, please email us at <a href="mailto:itshungryhour@gmail.com" target="_blank" style="font-weight:bold;text-decoration:underline;color:black;">itshungryhour@gmail.com</a>. We will respond to you as soon a possible.
-
-			</p>
-		</div>
-
-
-		</div>
-
-		<!-- Copyright Area Start -->
-		<div class="section copyright-area bg-7 ptb-65">
-			<div class="container">
-				<!-- Copyright right -->
-				<div class="row">
-					<div class="col-md-12">
-						<div class="copyright-area text-center">
-							<!-- Copyright social -->
-							<div class="contact-social text-center pb-10">
-								<ul>
-									<li>
-										<a href="https://www.facebook.com/itshungryhour/"><i class="icofont icofont-social-facebook"></i></a>
-									</li>
-									<li>
-										<a href="https://www.instagram.com/itshungryhour/"><i class="icofont icofont-social-instagram"></i></a>
-									</li>
-									<li>
-										<a href="https://twitter.com/itshungryhour"><i class="icofont icofont-social-twitter"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="icofont icofont-social-vimeo"></i></a>
-									</li>
-								</ul>
+								</div>
 							</div>
-							<!-- Copyright social -->
-							<!-- Copyright text -->
 						</div>
+					
 					</div>
 				</div>
-				<div class="row">
-					<div class="conct-border two">
-						<div class="col-md-12 col-sm-12">
-							<div class="single-address">
-								<div class="media">
-									<div class="media-body text-center">
-										<a href="mailto:itshungryhour@gmail.com" style="cursor:pointer;color:white;font-family: 'Open Sans', sans-serif; font-size: 16px;font-weight: 600; line-height: 25px;">Contact Us</a><br />
-										<a href="mailto:itshungryhour@gmail.com" style="cursor:pointer;color:white;font-family: 'Open Sans', sans-serif; font-size: 16px;font-weight: 600; line-height: 25px;">HungryHour for Business</a><br />
-										<a href="terms.html" style="cursor:pointer;color:white;font-family: 'Open Sans', sans-serif; font-size: 16px;font-weight: 600; line-height: 25px;">Terms</a><br />
-										<a href="privacypolicy.html" style="cursor:pointer;color:white;font-family: 'Open Sans', sans-serif; font-size: 16px;font-weight: 600; line-height: 25px;">Privacy</a>
-									</div>
+			</div>
+		</div><br />
+		<div class="download-option-btn text-center">
+			<ul>
+				<li>
+					<a target="_blank" href="contactus.html" style="background-color:#FF7B36;color:white;">
+						More questions?
+
+					</a>
+				</li>
+
+			</ul>
+		</div>
+
+
+	</div>
+
+	<!-- Copyright Area Start -->
+	<div class="section copyright-area bg-7 ptb-65">
+		<div class="container">
+			<!-- Copyright right -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="copyright-area text-center">
+						<!-- Copyright social -->
+						<div class="contact-social text-center pb-10">
+							<ul>
+								<li>
+									<a href="https://www.facebook.com/itshungryhour/"><i class="icofont icofont-social-facebook"></i></a>
+								</li>
+								<li>
+									<a href="https://www.instagram.com/itshungryhour/"><i class="icofont icofont-social-instagram"></i></a>
+								</li>
+								<li>
+									<a href="https://twitter.com/itshungryhour"><i class="icofont icofont-social-twitter"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="icofont icofont-social-vimeo"></i></a>
+								</li>
+							</ul>
+						</div>
+						<!-- Copyright social -->
+						<!-- Copyright text -->
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="conct-border two">
+					<div class="col-md-12 col-sm-12">
+						<div class="single-address">
+							<div class="media">
+								<div class="media-body text-center">
+									<a href="mailto:itshungryhour@gmail.com" style="cursor:pointer;color:white;font-family: 'Open Sans', sans-serif; font-size: 16px;font-weight: 600; line-height: 25px;">Contact Us</a><br />
+									<a href="mailto:itshungryhour@gmail.com" style="cursor:pointer;color:white;font-family: 'Open Sans', sans-serif; font-size: 16px;font-weight: 600; line-height: 25px;">HungryHour for Business</a><br />
+									<a href="terms.html" style="cursor:pointer;color:white;font-family: 'Open Sans', sans-serif; font-size: 16px;font-weight: 600; line-height: 25px;">Terms</a><br />
+									<a href="privacypolicy.html" style="cursor:pointer;color:white;font-family: 'Open Sans', sans-serif; font-size: 16px;font-weight: 600; line-height: 25px;">Privacy</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="copyright-text text-center">
-					<p>Copyright &copy; <a href="index.html"> HungryHour. </a> All Rights Reserved.</p>
-				</div>
-				<!-- Copyright right -->
 			</div>
+			<div class="copyright-text text-center">
+				<p>Copyright &copy; <a href="index.html"> HungryHour. </a> All Rights Reserved.</p>
+			</div>
+			<!-- Copyright right -->
 		</div>
-		<!-- Copyright Area End -->
-		<!-- all js here -->
-		<script src="js/vendor/jquery-1.12.4.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/slick.min.js"></script>
-		<script src="js/jquery.ajaxchimp.min.js"></script>
-		<script src="js/plugins.js"></script>
-		<script src="js/main.js"></script>
+	</div>
+	<!-- Copyright Area End -->
+	<!-- all js here -->
+	<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
 
 
-		</body>
+</body>
 
 </html>
 
