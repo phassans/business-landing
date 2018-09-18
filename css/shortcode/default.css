@@ -84,9 +84,16 @@ h2 {
     font-size: 40px;
 	font-weight: 600;
 }
-h3 {
-    font-size: 26px;
+h2-style {
+    color:#3e3e3e;
+    font-weight:600;
 }
+h3 {
+    font-size: 24px;
+    font-weight:600;
+    color:#3e3e3e;
+}
+
 h4 {
     font-size: 20px;
 }
