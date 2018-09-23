@@ -16,8 +16,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>HungryHour - Terms and Condition</title>
-	<meta name="title" content="Discounted eats and happy hours in real-time">
-	<meta name="description" content="The easy way to discover discounted eats and happy hours around you from local restaurants. Download the app for cheap eats and save money today with one tap!">
+	<meta name="title" content="HungryHour for Business - Promote Your Restaurant & Grow">
+	<meta name="description" content="Local online marketing in real-time. Advertise your food deals & happy hours to attract new customers. Boost exposure and increase traffic during slow hours.">
 	<meta name="keywords" content="discount, eat, happy hour, real-time">
 	<meta name="author" content="Diana Levan">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -87,6 +87,18 @@
 			box-shadow: -1px 2px 22px 1px rgba(0,0,0,0.75);
 			padding:20px;
 		}
+
+		.faqlinks {
+			font-weight:bold;
+			text-decoration:underline;
+			color:#3e3e3e;
+		}
+
+		label {
+    		font-size: 15px;
+    		font-weight: 600;
+    		color: #3e3e3e;
+		}
 	</style>
 </head>
 
@@ -102,17 +114,18 @@
 						<span class="icon-bar"></span>
 					</button>
 					<!-- <a class="navbar-brand" href="#"><img src="img/icon/logo.png" alt="logo" class="img-responsive"></a> -->
-					<a class="navbar-brand" href="index.html">
+					<a class="navbar-brand" href="/business">
 						<!-- <h4 class="home-logo">HungryHour</h4> -->
-						<img src="img/icon/logo.png" alt="logo" class="img-responsive">
+						<img src="img/icon/logo1.png" alt="logo" class="img-responsive">
 					</a>
 				</div>
 				<div class="collapse navbar-collapse" id="navigation">
 						<ul class="nav navbar-nav navbar-right">
-							<li class="active"><a href="#HungryHour">Why HungryHour</a></li>
-							<li class="active"><a href="#howitwork">How It Works</a></li>
+							<li><a href="index.html#slider-area">Overview</a></li>
+							<li><a href="index.html#HungryHour">Why HungryHour</a></li>
+							<li><a href="index.html#howitwork">How It Works</a></li>
 							<!--<li><a href="#HungryHour">Plans&pricings</a></li>-->
-							<li><a href="FAQ.html">FAQ</a></li>
+							<li><a href="index.htmlFAQ.html">FAQ</a></li>
 							<!--<li><a href="#">Login</a></li>
 							<li><a class="download-btn" href="#download-area">Sign up</a></li>-->
 						</ul>
@@ -129,8 +142,9 @@
 			<div class="col-md-10 shadow">
 				<div class="col-md-12">
 					<div class="col-md-6">
-						<h1 style="text-align:left;margin-top:10px;">Get in touch</h1>
+						<h2 style="text-align:left;margin-top:10px;">Get in touch</h2>
 						<p>Feel free to contact us with questions, potential partnerships, media inquiries, or just to say “Hi!”.</p>
+						<p>Or Email us at: <a href="mailto:itshungryhour@gmail.com" class="faqlinks">itshungryhour@gmail.com.</a></p>
 					</div>
 					<div class="col-md-6">
 					
@@ -161,7 +175,7 @@
 						
 						<div class="row">
 							<div class="form-group col-md-12">
-								<input type="button" class="next btn btn-lg btn-contact-bg" value="Submit" />
+								<input type="button" class="next btn btn-lg btn-contact-bg" value="Submit" id="btn_id"/>
 
 							</div>
 							
@@ -236,8 +250,9 @@
 		<script src="js/jquery.ajaxchimp.min.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/main.js"></script>
-
-
+		<script src="js/submit_jquery.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/js/bootstrap-dialog.min.js"></script>
 		</body>
 
 </html>
