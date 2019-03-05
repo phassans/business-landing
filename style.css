@@ -662,7 +662,7 @@ ul.a {
   font-weight: 600;
   text-transform: uppercase;
   transition: all 0.3s ease 0s;
-  width: 150px;
+  width: 190px;
 }
 .btn-contact-bg:hover,
 .btn-contact-bg:focus {
@@ -930,7 +930,7 @@ margin:0;
 		background: #E74B37;
 	}
 input[type=checkbox], input[type=radio] {
-	margin: 0 7px 0 0;
+	margin: 3px 7px 0px 10px;
 	width: auto;
 	height: auto;
 	display: inline-block;
