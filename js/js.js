@@ -19,6 +19,9 @@ $(document).ready(function () {
     });*/
 
     submit.on('click', function (e) {
+            $("input[type='button']", this)
+              .val("Please Wait...")
+              .attr('disabled', 'disabled');
         e.preventDefault();
         var form = $('#form')[0];
         var formData = new FormData(form);
