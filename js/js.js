@@ -19,9 +19,8 @@ $(document).ready(function () {
     });*/
 
     submit.on('click', function (e) {
-            $("input[type='button']", this)
-              .val("Please Wait...")
-              .attr('disabled', 'disabled');
+        submit.val("Please Wait...")
+              .attr('disabled', true);
         e.preventDefault();
         var form = $('#form')[0];
         var formData = new FormData(form);
@@ -41,9 +40,25 @@ $(document).ready(function () {
                 contentType: false,
                 success: function (data) {
                     success.html('Thank you for sharing this happy hour! Our team is excited to add this to our happy hour app. Expect to see it up and running within 24 hours!').css('color', 'green').slideDown();
+                    submit.val("SUBMIT HAPPY HOUR").attr('disabled', false);
+                    name.val("");
+                    email.val("");
+                    businessOwner.val("");
+                    restaurant.val("");
+                    city.val("");
+                    images.val("");
+                    description.val("");
                 },
                 error: function (e) {
                     info.html('Failed to submit Happy Hour at the moment.').css('color', 'red').slideDown();
+                    submit.val("SUBMIT HAPPY HOUR").attr('disabled', false);
+                    name.val("");
+                    email.val("");
+                    businessOwner.val("");
+                    restaurant.val("");
+                    city.val("");
+                    images.val("");
+                    description.val("");
                 },
             });
         }
@@ -80,6 +95,7 @@ $(document).ready(function () {
 
         if (!valid) {
             info.html('Please fix the above errors to submit happy hour.').css('color', 'red').slideDown();
+            submit.val("SUBMIT HAPPY HOUR").attr('disabled', false);
         }
 
         return valid;
