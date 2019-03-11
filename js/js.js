@@ -28,7 +28,7 @@ $(document).ready(function () {
         if (validate()) { 
             $.ajax({
                 type: "POST",
-                url: "http://localhost:8080/v1/hhsubmit",
+                url: "https://www.itshungryhour.com/api/v1/hhsubmit",
                 enctype: 'multipart/form-data',
                 data: formData,
                 processData: false,
