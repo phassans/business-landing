@@ -26,10 +26,12 @@ $(document).ready(function () {
         success.html('').slideUp();
         formData.append("businessOwner", businessOwner.val());
         formData.append("phoneId", "web");
-        if (validate()) { 
+        formData.append("description", description.val());
+        if (validate()) {
             $.ajax({
                 type: "POST",
                 url: "https://www.itshungryhour.com/api/v1/hhsubmit",
+                //url: "http://localhost:8080/v1/hhsubmit",
                 enctype: 'multipart/form-data',
                 data: formData,
                 processData: false,
