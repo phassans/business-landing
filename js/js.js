@@ -50,6 +50,8 @@ $(document).ready(function () {
         if ($.trim(email.val()) != "" && !regex.test(email.val())) {
             email.css('border-color', 'red');
             valid = false;
+        } else {
+            email.css('border-color', '');
         }
         if ($.trim(restaurant.val()) === "") {
             restaurant.css('border-color', 'red');
